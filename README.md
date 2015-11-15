@@ -14,11 +14,13 @@ Accepts data as strings, integer number or floating number.
 Both near or far data can be undefined.
    
 ####Near data
-	nearSphFloat    //Float near sphere
-	nearCylFloat    //Float near cylinder
-	nearSphAbs      //Absolute near sphere
-	nearCylAbs      //Absolute near cylinder (Always positive)
-	farAx           //Integer near axis
+```
+nearSphFloat    //Float near sphere
+nearCylFloat    //Float near cylinder
+nearSphAbs      //Absolute near sphere
+nearCylAbs      //Absolute near cylinder (Always positive)
+farAx           //Integer near axis
+```
 
 ####Far data
 	farSphFloat     //Float far sphere
