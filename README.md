@@ -52,46 +52,46 @@ Exemple Progressive lens:
 
 ####METHODS:
 
-maxDiopter();
+#####maxDiopter();
 
-        Return associative array with three values:
-            maxDiopter.near         // Max absolute diopter for near data
-            maxDiopter.far          // Max absolute diopter for far data
-            maxDiopter.progressive  // Max absolute diopter between max absolute near diopter and max absolute far diopter
+Return associative array with three values:
+maxDiopter.near         // Max absolute diopter for near data
+maxDiopter.far          // Max absolute diopter for far data
+maxDiopter.progressive  // Max absolute diopter between max absolute near diopter and max absolute far diopter
         
-        Exemple:
-        var progLens = new Lens (
-            "-2.50", "+0.75", "30",
-            "-2.00", "+2.00", "90"
-        );
-        var progLensMaxDiopter = progLens.maxDiopter();
-        var progLensMaxDiopterProgressive = progLensMaxDiopter.progressive;
+Exemple:
+	var progLens = new Lens (
+		"-2.50", "+0.75", "30",
+		"-2.00", "+2.00", "90"
+	);
+	var progLensMaxDiopter = progLens.maxDiopter();
+	var progLensMaxDiopterProgressive = progLensMaxDiopter.progressive;
     
 	
-transpose();
-        
-        Notes:  Accept parameter "plus" and "minus"
-                    transpose("plus")   //will output all values transposed with positive cylinders;
-                    transpose("minus")  //will output all values transposed with negative cylinders;
-                    transpose()         //will output all values transposed with opposite cylinder.
-                                            Plus to minus and minus to plus.
+#####transpose();
 
-        Return a multidimensionalarray with transposed near and far data:
+Accept parameter "plus" and "minus"
 
-            transpose.near
-                transpose.near.sph
-                transpose.near.cyl
-                transpose.near.ax
+transpose("plus")   //will output all values transposed with positive cylinders;
+transpose("minus")  //will output all values transposed with negative cylinders;
+transpose()         //will output all values transposed with opposite cylinder. Plus to minus and minus to plus.
 
-            transpose.far
-                transpose.far.sph
-                transpose.far.cyl
-                transpose.far.ax
+Return a multidimensionalarray with transposed near and far data:
 
-        Exemple:
-        var progLens = new Lens (
-            "-1.00", "6.00", "2",
-            "+1.25", "2.00", "50"
-        );
-        var progLensTranspose = progLens.transpose("plus");
-        console.log(progLensTranspose);
+transpose.near
+	transpose.near.sph
+	transpose.near.cyl
+	transpose.near.ax
+
+transpose.far
+	transpose.far.sph
+	transpose.far.cyl
+	transpose.far.ax
+
+Exemple:
+	var progLens = new Lens (
+		"-1.00", "6.00", "2",
+		"+1.25", "2.00", "50"
+	);
+	var progLensTranspose = progLens.transpose("plus");
+	console.log(progLensTranspose);
