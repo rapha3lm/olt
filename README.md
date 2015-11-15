@@ -1,48 +1,48 @@
-# olt
-
 # OLT - Ophthalmic lenses tools v1.0
-###06/10/2015
+####06/10/2015
 
-##USAGE:
+###USAGE:
 
     var thisLens = new Lens(
         nearSphere, nearCylinder,   nearAxis,   //Near data
         farSphere,  farCylinder,    farAxis     //Far Data
     );
 
-    Notes:  Providing both data will generate a progressive lens;
-            Accepts data as strings, integer number or floating number;
-            Both near or far data can be undefined.
-    
-    //Near data
-        nearSphFloat    //Float near sphere
-        nearCylFloat    //Float near cylinder
-        nearSphAbs      //Absolute near sphere
-        nearCylAbs      //Absolute near cylinder (Always positive)
-        farAx           //Integer near axis
-    
-    //Far data
-        farSphFloat     //Float far sphere
-        farCylFloat     //Float far cylinder
-        farSphAbs       //Absolute far sphere
-        farCylAbs       //Absolute far cylinder (Always positive)      
-        farAx           //Integer far axis
+####Notes: 
+Providing both data will generate a progressive lens;
+Accepts data as strings, integer number or floating number;
+Both near or far data can be undefined.
+   
+####Near data
+	nearSphFloat    //Float near sphere
+	nearCylFloat    //Float near cylinder
+	nearSphAbs      //Absolute near sphere
+	nearCylAbs      //Absolute near cylinder (Always positive)
+	farAx           //Integer near axis
 
-EXEMPLES:
-    Exemple Monofocal near lens:
+####Far data
+	farSphFloat     //Float far sphere
+	farCylFloat     //Float far cylinder
+	farSphAbs       //Absolute far sphere
+	farCylAbs       //Absolute far cylinder (Always positive)      
+	farAx           //Integer far axis
+
+####EXEMPLES:
+
+Exemple Monofocal near lens:
     var monofocalNearLens = new Lens(
         "-2.00", "+0.75", "90"
     );
     var monofocalNearLensAbsSph = monofocalNearLens.nearSphAbs;
 
-    Exemple Monofocal far lens:
+Exemple Monofocal far lens:
     var monofocalFarLens = new Lens(
         undefined,  undefined,  undefined,
         "-2.00",    "+2.00",    "90"
     );
     var monofocalFarLensAbsSph = monofocalFarLens.farSphAbs;
 
-    Exemple Progressive lens:
+Exemple Progressive lens:
     var progressiveLens = new Lens(
         "-2.50", "+0.75", "30",
         "-2.00", "+2.00", "90"
@@ -50,8 +50,9 @@ EXEMPLES:
     var progressiveLensNearAbsSph = monofocalNearLens.nearSphAbs;
     var progressiveLensFarAbsSph  = monofocalFarLens.farSphAbs;
 
-METHODS:
-    maxDiopter();
+####METHODS:
+
+maxDiopter();
 
         Return associative array with three values:
             maxDiopter.near         // Max absolute diopter for near data
@@ -67,7 +68,7 @@ METHODS:
         var progLensMaxDiopterProgressive = progLensMaxDiopter.progressive;
     
 	
-    transpose();
+transpose();
         
         Notes:  Accept parameter "plus" and "minus"
                     transpose("plus")   //will output all values transposed with positive cylinders;
