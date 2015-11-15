@@ -1,9 +1,10 @@
 # olt
 
-Ophthalmic lenses tools v1.0
-06/10/2015
+# OLT - Ophthalmic lenses tools v1.0
+###06/10/2015
 
-USAGE:
+##USAGE:
+
     var thisLens = new Lens(
         nearSphere, nearCylinder,   nearAxis,   //Near data
         farSphere,  farCylinder,    farAxis     //Far Data
