@@ -9,8 +9,8 @@
     );
 
 ####Notes: 
-Providing both data will generate a progressive lens;
-Accepts data as strings, integer number or floating number;
+Providing both data will generate a progressive lens.
+Accepts data as strings, integer number or floating number.
 Both near or far data can be undefined.
    
 ####Near data
@@ -60,12 +60,12 @@ maxDiopter.far          // Max absolute diopter for far data
 maxDiopter.progressive  // Max absolute diopter between max absolute near diopter and max absolute far diopter
         
 Exemple:
-	var progLens = new Lens (
-		"-2.50", "+0.75", "30",
-		"-2.00", "+2.00", "90"
-	);
-	var progLensMaxDiopter = progLens.maxDiopter();
-	var progLensMaxDiopterProgressive = progLensMaxDiopter.progressive;
+>var progLens = new Lens (
+>	"-2.50", "+0.75", "30",
+>	"-2.00", "+2.00", "90"
+>);
+>var progLensMaxDiopter = progLens.maxDiopter();
+>var progLensMaxDiopterProgressive = progLensMaxDiopter.progressive;
     
 	
 #####transpose();
