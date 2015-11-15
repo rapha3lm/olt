@@ -1,15 +1,7 @@
 # olt
 
-/**********************************************************
- ___       __          _   __  __   _       _   _         
-| _ \__ _ / _|__ _ ___| | |  \/  | /_\  _ _| |_(_)_ _  ___
-|   / _` |  _/ _` / -_) | | |\/| |/ _ \| '_|  _| | ' \(_-<
-|_|_\__,_|_| \__,_\___|_| |_|  |_/_/ \_\_|  \__|_|_||_/__/
-
-Ophthalmic lenses tools v1.0                    06/10/2015
-
-Dependencies: None
-***********************************************************
+Ophthalmic lenses tools v1.0
+06/10/2015
 
 USAGE:
     var thisLens = new Lens(
@@ -73,8 +65,7 @@ METHODS:
         var progLensMaxDiopter = progLens.maxDiopter();
         var progLensMaxDiopterProgressive = progLensMaxDiopter.progressive;
     
-    =======================================================
-   
+	
     transpose();
         
         Notes:  Accept parameter "plus" and "minus"
@@ -102,5 +93,3 @@ METHODS:
         );
         var progLensTranspose = progLens.transpose("plus");
         console.log(progLensTranspose);
-
-**********************************************************/
