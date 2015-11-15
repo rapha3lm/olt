@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>olt.js - Ophthalmic lenses tools</title>
+	<meta name="description" content="JavaScript ophthalmic lenses tools">
+	<meta name="keywords" content="ophthalmic,lenses,optical,transpose,JavaScript">
+	<meta name="author" content="Rafael Martins">
+	<script src="olt-1.0/olt.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var progLens = new Lens (
+			"-1.00", "6.00", "2",
+			"+1.25", "2.00", "50"
+		);
+		var progLensTranspose = progLens.transpose("plus");
+		console.log(progLensTranspose);
+		</script>
+</body>
+</html>
