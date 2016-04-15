@@ -34,20 +34,20 @@ USAGE:
         farAx           //Integer far axis
 
 EXEMPLES:
-    Exemple Monofocal near lens:
+    Example Monofocal near lens:
     var monofocalNearLens = new Lens(
         "-2.00", "+0.75", "90"
     );
     var monofocalNearLensAbsSph = monofocalNearLens.nearSphAbs;
 
-    Exemple Monofocal far lens:
+    Example Monofocal far lens:
     var monofocalFarLens = new Lens(
         undefined,  undefined,  undefined,
         "-2.00",    "+2.00",    "90"
     );
     var monofocalFarLensAbsSph = monofocalFarLens.farSphAbs;
 
-    Exemple Progressive lens:
+    Example Progressive lens:
     var progressiveLens = new Lens(
         "-2.50", "+0.75", "30",
         "-2.00", "+2.00", "90"
@@ -63,7 +63,7 @@ METHODS:
             maxDiopter.far          // Max absolute diopter for far data
             maxDiopter.progressive  // Max absolute diopter between max absolute near diopter and max absolute far diopter
         
-        Exemple:
+        Example:
         var progLens = new Lens (
             "-2.50", "+0.75", "30",
             "-2.00", "+2.00", "90"
@@ -93,7 +93,7 @@ METHODS:
                 transpose.far.cyl
                 transpose.far.ax
 
-        Exemple:
+        Example:
         var progLens = new Lens (
             "-1.00", "6.00", "2",
             "+1.25", "2.00", "50"
