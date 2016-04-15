@@ -51,7 +51,7 @@ var monofocalNearLens = new Lens(
 var monofocalNearLensAbsSph = monofocalNearLens.nearSphAbs;
 
 
-//Exemple Monofocal far lens:
+//Example Monofocal far lens:
 var monofocalFarLens = new Lens(
 	undefined,  undefined,  undefined,
 	"-2.00",    "+2.00",    "90"
@@ -59,7 +59,7 @@ var monofocalFarLens = new Lens(
 var monofocalFarLensAbsSph = monofocalFarLens.farSphAbs;
 
 
-//Exemple Progressive lens:
+//Example Progressive lens:
 var progressiveLens = new Lens(
 	"-2.50", "+0.75", "30",
 	"-2.00", "+2.00", "90"
